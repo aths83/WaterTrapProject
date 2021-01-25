@@ -7,7 +7,7 @@ import operator
 # heights = [4,4,4,3,4,4]
 # heights = [2, 1, 0, 1, 2, 3, 4]
 # heights = [5, 4, 3, 2, 1, 2, 3]
-# heights = [8, 6, 4, 2, 0, 2, 4, 6, 6, 5, 4, 3, 2, 1, 1, 1, 4, 6, 7, 4, 1, 0, 10, 5]
+heights = [8, 6, 4, 2, 0, 2, 4, 6, 6, 5, 4, 3, 2, 1, 1, 1, 4, 6, 7, 4, 1, 0, 10, 5]
 # heights = [4, 3, 2, 1, 2, 3, 4]
 # heights = [3, 0, 3]
 # heights = [0, 3, 0]
@@ -45,7 +45,6 @@ def fill_right_bucket():
     else:
         temp_max_idx = max_idx
 
-    # left side fill
     while 1:
         temp_heights = rev_heights[: temp_max_idx]
         if temp_max_idx >= 1:
